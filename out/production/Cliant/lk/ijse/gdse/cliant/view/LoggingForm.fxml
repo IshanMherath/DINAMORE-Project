@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="436.0" prefWidth="686.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.cliant.controller.LoggingFormController">
+   <children>
+      <ImageView fitHeight="382.0" fitWidth="980.0" layoutX="-2.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.8px;">
+         <image>
+            <Image url="@../images/all_menu_banner.jpg" />
+         </image>
+      </ImageView>
+      <JFXRadioButton fx:id="rReseption" layoutX="153.0" layoutY="192.0" onAction="#ReseptionAction" text="Reseption">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="myGroup" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rCook" layoutX="302.0" layoutY="192.0" onAction="#CookAction" text="Cook" toggleGroup="$myGroup">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rdeliwer" layoutX="428.0" layoutY="192.0" onAction="#DileverAction" text="Dilever" toggleGroup="$myGroup">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXRadioButton>
+      <TextField fx:id="txtName" layoutX="226.0" layoutY="233.0" prefHeight="25.0" prefWidth="250.0" style="-fx-opacity: 0.4px;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="92.0" layoutY="237.0" prefHeight="17.0" prefWidth="90.0" style="-fx-alignment: center;" text="User Name">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPassword" layoutX="227.0" layoutY="286.0" prefHeight="25.0" prefWidth="250.0" style="-fx-opacity: 0.4px;" />
+      <Label layoutX="95.0" layoutY="287.0" prefHeight="17.0" prefWidth="90.0" style="-fx-alignment: center;" text="Password">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnLoging" layoutX="229.0" layoutY="343.0" onAction="#LogingDashbord" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: blue; -fx-opacity: 0.5px; -fx-border-radius: 30px; -fx-background-radius: 30px;" text="Loging" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="-1.0" prefHeight="55.0" prefWidth="699.0" style="-fx-background-color: red; -fx-opacity: 0.8px;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="246.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/dinemore.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="560.0" layoutY="233.0" onAction="#RefreshRedioBtn" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: yellow; -fx-background-radius: 50px;" text="Refres">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXRadioButton fx:id="adminSide" layoutX="35.0" layoutY="192.0" text="Admin" toggleGroup="$myGroup">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXRadioButton>
+   </children>
+</AnchorPane>

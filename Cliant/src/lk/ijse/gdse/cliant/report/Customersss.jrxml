@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-11-24T08:44:40 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Customersss" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e494bbdf-c7b3-4b09-b1ff-e7981694bef4">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="dinermore"/>
+	<queryString language="SQL">
+		<![CDATA[select * from customer]]>
+	</queryString>
+	<field name="customerID" class="java.lang.Integer"/>
+	<field name="customer_Name" class="java.lang.String"/>
+	<field name="customerAddress" class="java.lang.String"/>
+	<field name="customerNicNO" class="java.lang.String"/>
+	<field name="salary" class="java.lang.Integer"/>
+	<group name="customerID">
+		<groupExpression><![CDATA[$F{customerID}]]></groupExpression>
+	</group>
+	<group name="customer_Name">
+		<groupExpression><![CDATA[$F{customer_Name}]]></groupExpression>
+	</group>
+	<group name="customerAddress">
+		<groupExpression><![CDATA[$F{customerAddress}]]></groupExpression>
+	</group>
+	<group name="customerNicNO">
+		<groupExpression><![CDATA[$F{customerNicNO}]]></groupExpression>
+	</group>
+	<group name="salary">
+		<groupExpression><![CDATA[$F{salary}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="111" height="30" uuid="814baadc-dfad-43de-9034-97a8a4c05d49"/>
+				<text><![CDATA[customerID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="111" height="30" uuid="f516097c-e6b9-493e-8d54-c02625031a12"/>
+				<text><![CDATA[customer_Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="111" height="30" uuid="316b385b-71bf-4b21-a148-1349338c9143"/>
+				<text><![CDATA[customerAddress]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="111" height="30" uuid="595b4013-b6c7-4dd2-880a-8be0d1886ebd"/>
+				<text><![CDATA[customerNicNO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="30" uuid="b6023b0e-5a24-42b2-87f2-28f620a51d45"/>
+				<text><![CDATA[salary]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="19" width="111" height="30" uuid="f0ac0ab4-f37c-4465-a8f7-9e235e130dfe"/>
+				<textFieldExpression><![CDATA[$F{customerID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="19" width="111" height="30" uuid="24086cd3-1f06-4d1a-84c6-5f8fac25a5c7"/>
+				<textFieldExpression><![CDATA[$F{customer_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="19" width="111" height="30" uuid="bcb3f8a5-173f-4057-bb90-7a529dfe256e"/>
+				<textFieldExpression><![CDATA[$F{customerAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="19" width="111" height="30" uuid="a0946d7c-c5c6-4be1-92b5-80eea701c11e"/>
+				<textFieldExpression><![CDATA[$F{customerNicNO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="19" width="111" height="30" uuid="559fc1e2-7415-4fde-ae34-0e5771264d54"/>
+				<textFieldExpression><![CDATA[$F{salary}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

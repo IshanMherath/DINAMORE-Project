@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-11-24T19:38:51 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Cheff" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0014b97c-efaa-4ba0-9d4d-a795841808b7">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="dinermore"/>
+	<queryString language="SQL">
+		<![CDATA[select * from chef]]>
+	</queryString>
+	<field name="chefID" class="java.lang.Integer"/>
+	<field name="chefF_Name" class="java.lang.String"/>
+	<field name="chefAddress" class="java.lang.String"/>
+	<field name="chefTel" class="java.lang.Integer"/>
+	<field name="age" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="48" splitType="Stretch">
+			<staticText>
+				<reportElement x="216" y="12" width="100" height="30" forecolor="#1900FF" backcolor="#4000FF" uuid="f6bc6edf-125f-4a3b-8c0f-9cf7647876da"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cheff Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="5" width="111" height="30" forecolor="#D13532" uuid="0a3808fb-070a-4a72-af39-3a7e4cbd711f"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#696868"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[chefID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="5" width="111" height="30" forecolor="#D13532" uuid="073fc98c-e5d4-4614-8f50-bd5c95021844"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[chefF_Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="5" width="111" height="30" forecolor="#D13532" uuid="2e105788-88c9-4f09-90ff-2891c8b1fbd0"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[chefAddress]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="5" width="111" height="30" forecolor="#D13532" uuid="28998567-6613-4769-bfb1-9fe1ffb0d287"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[chefTel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="5" width="111" height="30" forecolor="#D13532" uuid="a05a9e97-9c23-48eb-8eae-94ef08c888ca"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[age]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement x="5" y="5" width="104" height="30" uuid="c76f0457-45d6-4291-b211-3a17affbf3d6"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#696868"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chefID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="5" width="111" height="30" uuid="9bd7bbed-a01d-4211-a6c2-b28e86f8343a"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#696868"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{chefF_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="5" width="111" height="30" uuid="25ed2ae9-8171-414f-aeae-8f8374d15e2c"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#696868"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{chefAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="5" width="111" height="30" uuid="2c9cdc66-b7a6-4e80-8f98-6dcb2ad211ab"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#696868"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{chefTel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="5" width="105" height="30" uuid="14e11a26-8f49-4d72-8dd8-94e57ca985ad"/>
+				<box padding="1">
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#696868"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

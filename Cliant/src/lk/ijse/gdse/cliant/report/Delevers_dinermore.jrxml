@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-11-24T21:02:56 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Delevers_dinermore" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8f549c9a-8a39-4c55-8a0d-adf54fc030de">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="dinermore"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select * from delevers;]]>
+	</queryString>
+	<field name="deleverId" class="java.lang.Integer"/>
+	<field name="deleverName" class="java.lang.String"/>
+	<field name="deleverAddress" class="java.lang.String"/>
+	<field name="bikeRider_Tel" class="java.lang.Integer"/>
+	<field name="age" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="234" y="25" width="100" height="30" uuid="470df3ae-2b1d-4de3-9283-a686531e1c56"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Delever]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="111" height="30" uuid="82051a3d-9cd1-4bc5-9bc9-bee0b4cff3c0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[deleverId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="2" width="111" height="30" uuid="6a5289e7-2e69-4942-956b-d1da40669693"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[deleverName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="2" width="111" height="30" uuid="274580f7-c21a-42e0-be0e-48356e80721f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[deleverAddress]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="2" width="111" height="30" uuid="9a1cd20b-0ae7-4fb1-89fd-34d7a3ef9ae1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[bikeRider_Tel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="2" width="111" height="30" uuid="6613b4e8-fa2c-4ebc-b50c-ce17fd15453c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[age]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="48" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="8" width="111" height="30" uuid="0c4ffb85-6ebe-4aed-bee7-b07b643a0bcc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{deleverId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="8" width="111" height="30" uuid="c4ab7881-4c09-40ae-90b1-75ce33574ecb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{deleverName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="8" width="111" height="30" uuid="3d8a9929-1729-449a-b133-a69fcf9dd8ea"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{deleverAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="8" width="111" height="30" uuid="00ee089f-4289-4a9f-a97b-0f4f6bb894a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{bikeRider_Tel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="8" width="111" height="30" uuid="ff9ed2cd-2f68-4344-8c63-6fb4b2a56e5d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
